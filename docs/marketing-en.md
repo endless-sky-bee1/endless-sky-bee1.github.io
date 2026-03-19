@@ -19,6 +19,27 @@ The project is designed for teams who need a solid, customizable firmware base r
 
 ---
 
+## Hardware Customization Overview
+
+Endless is not limited to generic firmware delivery. It also supports hardware customization around the customer's target product form factor. For teams building commercial camera products, the existing platforms can be extended with board adaptation, peripheral integration, and product-specific configuration.
+
+### Customization Scope
+
+| Area | What can be customized |
+|------|------------------------|
+| SoC / platform | Fast delivery on existing Hisilicon platforms, with extension to new SoCs / BSPs when needed |
+| Board adaptation | Board-level configuration aligned with customer mainboard, sensor, audio path, and interface definitions |
+| Peripheral integration | GPIO, USB audio, IR-CUT, RTC, watchdog, and related driver/control adaptation |
+| Product specification | Product-specific combinations of resolution, codec, AI capabilities, protocols, and storage options |
+
+### Delivery Approach
+
+- Start from existing reference platforms to shorten hardware bring-up time
+- Create different variants for commercial, entry-level, or high-end AI camera products
+- Run hardware customization and software tailoring in parallel to reduce integration cost
+
+---
+
 ## Core Capabilities
 
 ### Video Pipeline
