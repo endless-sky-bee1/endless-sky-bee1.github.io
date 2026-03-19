@@ -18,4 +18,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 文件结构
 
-- `index.html` - 网站主页，包含内联样式
+- `index.html` - 网站主页
+- `styles.css` - 网站样式表
+
+## 参考源码
+
+- 本网站内容与文案应参考本地源码仓：`/home/endless/workspace/open/endless/endless-github`
+- 更新网站时，优先依据该仓库中的 `README.md`、`docs/zh/PRD.md`、`docs/zh/FeatureList.md`、`docs/zh/TechStack.md` 与 `foundation/web_page/README.md`
