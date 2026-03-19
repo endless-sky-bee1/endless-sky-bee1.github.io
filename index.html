@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Endless - 开源智能摄像头解决方案，支持云端AI多模态交互、WebRTC低延迟预览、智能分析">
+    <meta name="description" content="Endless - 开源智能摄像头技术方案资料，支持云端AI多模态交互、WebRTC低延迟预览、智能分析与软硬件定制">
     <meta name="keywords" content="智能摄像头,开源摄像头,AI摄像头,WebRTC,RTSP,海思,物联网,IoT">
-    <title>Endless - 开源智能摄像头解决方案</title>
+    <title>Endless - 开源智能摄像头技术方案</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,6 +19,7 @@
                 <li><a href="#architecture">架构</a></li>
                 <li><a href="#platforms">平台</a></li>
                 <li><a href="#tech">技术栈</a></li>
+                <li><a href="docs/index.html">资料</a></li>
                 <li><a href="https://github.com/endless-sky-bee1" target="_blank">GitHub</a></li>
             </ul>
         </div>
@@ -24,11 +27,52 @@
 
     <section class="hero">
         <div class="container">
+            <span class="hero-note">Technical Solution Brief</span>
             <h1>Endless</h1>
-            <p>开源智能摄像头完整解决方案<br>云端AI多模态交互 · WebRTC低延迟预览 · 智能分析</p>
+            <p>开源智能摄像头技术方案资料<br>云端AI多模态交互 · WebRTC低延迟预览 · 智能分析 · 软硬件定制</p>
+            <div class="hero-highlights">
+                <span>分层架构清晰</span>
+                <span>协议接口完整</span>
+                <span>支持软硬件定制</span>
+            </div>
             <div class="cta">
-                <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-primary" target="_blank">查看源码</a>
-                <a href="#features" class="btn btn-outline">了解更多</a>
+                <a href="docs/index.html" class="btn btn-primary">查看技术资料</a>
+                <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-outline" target="_blank">查看源码</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="materials" id="materials">
+        <div class="container">
+            <div class="section-title">
+                <h2>技术方案资料</h2>
+                <p>首页直接提供适合售前介绍、方案宣讲、技术评估与软硬件定制沟通的资料入口。</p>
+            </div>
+            <div class="materials-grid">
+                <a href="docs/marketing.html" class="material-card">
+                    <span class="material-label">技术版介绍</span>
+                    <h3>产品介绍</h3>
+                    <p>概述核心能力、应用场景、接口能力与定制方式，适合首次沟通与方案讲解。</p>
+                    <span class="material-link">查看资料 →</span>
+                </a>
+                <a href="docs/architecture.html" class="material-card">
+                    <span class="material-label">架构视图</span>
+                    <h3>系统架构</h3>
+                    <p>展开从硬件到应用的分层设计、关键模块与定制接口，便于研发和客户一起评审。</p>
+                    <span class="material-link">查看资料 →</span>
+                </a>
+                <a href="docs/features.html" class="material-card">
+                    <span class="material-label">交付边界</span>
+                    <h3>功能列表</h3>
+                    <p>按模块标注已实现与规划中能力，覆盖软件功能边界与硬件支持范围，方便做需求对齐。</p>
+                    <span class="material-link">查看资料 →</span>
+                </a>
+                <a href="docs/index.html" class="material-card">
+                    <span class="material-label">资料目录</span>
+                    <h3>资料中心</h3>
+                    <p>集中查看中英双语 HTML 页面与 Markdown 源文件，便于下载、分享和持续更新。</p>
+                    <span class="material-link">进入中心 →</span>
+                </a>
             </div>
         </div>
     </section>
@@ -36,8 +80,8 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-title">
-                <h2>核心特性</h2>
-                <p>从硬件到云端，构建完整的智能摄像头生态</p>
+                <h2>核心能力</h2>
+                <p>从芯片平台、流媒体协议到 AI 服务，整理出适合技术方案沟通的关键卖点。</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -68,7 +112,7 @@
                 <div class="feature-card">
                     <div class="icon">🔧</div>
                     <h3>灵活扩展</h3>
-                    <p>组件化架构设计，功能模块可插拔，支持多种硬件平台定制</p>
+                    <p>组件化架构设计，功能模块可插拔，支持软硬件按需定制</p>
                 </div>
             </div>
         </div>
@@ -164,7 +208,7 @@
                         <li>CMake 构建系统</li>
                         <li>GStreamer 媒体框架</li>
                         <li>FFmpeg 音视频处理</li>
-                        <li>Live555 RTSP服务</li>
+                        <li>SQLite / OpenSSL</li>
                     </ul>
                 </div>
                 <div class="tech-category">
@@ -192,8 +236,8 @@
                         <li>RTSP/RTMP</li>
                         <li>WebRTC</li>
                         <li>HTTP/HTTPS</li>
-                        <li>ONVIF (计划中)</li>
-                        <li>GB28181 (计划中)</li>
+                        <li>ONVIF</li>
+                        <li>GB28181</li>
                     </ul>
                 </div>
             </div>
@@ -204,7 +248,10 @@
         <div class="container">
             <h2>开始构建你的智能摄像头</h2>
             <p>开源、灵活、强大，Endless 助你快速实现智能摄像头产品化</p>
-            <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-primary" target="_blank">GitHub 仓库</a>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-primary" target="_blank">GitHub 仓库</a>
+                <a href="docs/index.html" class="btn btn-outline">查看资料</a>
+            </div>
         </div>
     </section>
 
@@ -228,7 +275,7 @@
                 </ul>
             </div>
             <div class="copyright">
-                <p>&copy; 2024 Endless. All rights reserved.</p>
+                <p>&copy; 2026 Endless. All rights reserved.</p>
             </div>
         </div>
     </footer>

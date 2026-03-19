@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Endless 功能列表文档，覆盖软件功能边界与硬件支持范围。">
+    <title>功能列表 — Endless</title>
+    <link rel="icon" href="../favicon.ico" sizes="any">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="doc.css">
+</head>
+<body class="docs-body">
+    <nav>
+        <div class="container">
+            <a href="../index.html" class="logo">Endless</a>
+            <ul>
+                <li><a href="../index.html#features">特性</a></li>
+                <li><a href="../index.html#architecture">架构</a></li>
+                <li><a href="../index.html#platforms">平台</a></li>
+                <li><a href="../index.html#tech">技术栈</a></li>
+                <li><a href="index.html" class="active">资料</a></li>
+                <li><a href="https://github.com/endless-sky-bee1" target="_blank" rel="noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="doc-hero">
+        <div class="container">
+            <div class="doc-hero-panel">
+                <span class="doc-kicker">Feature Reference</span>
+                <h1>功能列表</h1>
+                <p>承接首页中的核心特性展示，按模块整理已实现与规划能力，并补充软硬件定制范围，方便项目沟通。</p>
+                <div class="doc-hero-actions">
+                    <a href="index.html" class="btn btn-primary">返回资料中心</a>
+                    <a href="features.md" class="btn btn-outline" download>下载 Markdown</a>
+                </div>
+                <div class="doc-hero-meta">
+                    <div class="doc-meta-chip">
+                        <strong>文档类型</strong>
+                        <span>功能清单</span>
+                    </div>
+                    <div class="doc-meta-chip">
+                        <strong>语言</strong>
+                        <span>中文</span>
+                    </div>
+                    <div class="doc-meta-chip">
+                        <strong>源文件</strong>
+                        <span>features.md</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="doc-content-section">
+        <div class="container">
+            <div class="doc-layout">
+                <div class="doc-topbar">
+                    <a href="index.html" class="back-link">← 资料中心</a>
+                    <a href="features.md" class="download-link" download>下载 .md</a>
+                </div>
+                <div class="doc-article-shell">
+                    <article id="content" class="markdown-body">加载中…</article>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <h3>Endless</h3>
+                <p>开源智能摄像头解决方案</p>
+            </div>
+            <div class="links">
+                <h4>资源</h4>
+                <ul>
+                    <li><a href="https://github.com/endless-sky-bee1/endless" target="_blank" rel="noreferrer">GitHub 仓库</a></li>
+                    <li><a href="https://github.com/endless-sky-bee1/endless/issues" target="_blank" rel="noreferrer">问题反馈</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">endless@endless-sky.onaliyun.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Endless. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        fetch('features.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('content').innerHTML = marked.parse(text);
+            })
+            .catch(() => {
+                document.getElementById('content').textContent = '文档加载失败';
+            });
+    </script>
+</body>
+</html>
