@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Endless product overview covering core capabilities and hardware/software customization options.">
-    <title>Product Overview — Endless</title>
-    <link rel="icon" href="../favicon.ico" sizes="any">
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Endless 系统架构文档，说明系统分层设计以及软硬件定制接口。">
+    <title>系统架构 — Endless</title>
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="doc.css">
 </head>
 <body class="docs-body">
     <nav>
         <div class="container">
-            <a href="../index.html" class="logo">Endless</a>
+            <a href="../../index.html" class="logo">Endless</a>
             <ul>
-                <li><a href="../index.html#features">Features</a></li>
-                <li><a href="../index.html#architecture">Architecture</a></li>
-                <li><a href="../index.html#platforms">Platforms</a></li>
-                <li><a href="../index.html#tech">Tech Stack</a></li>
-                <li><a href="index.html" class="active">Docs</a></li>
+                <li><a href="../../index.html#features">特性</a></li>
+                <li><a href="../../index.html#architecture">架构</a></li>
+                <li><a href="../../index.html#platforms">平台</a></li>
+                <li><a href="../../index.html#tech">技术栈</a></li>
+                <li><a href="index.html" class="active">技术资料</a></li>
                 <li><a href="https://atomgit.com/endless/endless" target="_blank" rel="noreferrer">AtomGit</a></li>
             </ul>
         </div>
@@ -29,25 +29,25 @@
     <section class="doc-hero">
         <div class="container">
             <div class="doc-hero-panel">
-                <span class="doc-kicker">Product Brief</span>
-                <h1>Product Overview</h1>
-                <p>This overview extends the homepage narrative around multimodal AI, low-latency WebRTC preview, intelligent analytics, and hardware customization options.</p>
+                <span class="doc-kicker">Architecture Document</span>
+                <h1>系统架构</h1>
+                <p>将首页概览中的分层架构进一步展开，帮助研发、客户与合作伙伴快速理解从硬件到应用的完整系统设计与定制路径。</p>
                 <div class="doc-hero-actions">
-                    <a href="index.html" class="btn btn-primary">Back to Docs</a>
-                    <a href="marketing-en.md" class="btn btn-outline" download>Download Markdown</a>
+                    <a href="index.html" class="btn btn-primary">返回资料中心</a>
+                    <a href="architecture.md" class="btn btn-outline" download>下载 Markdown</a>
                 </div>
                 <div class="doc-hero-meta">
                     <div class="doc-meta-chip">
-                        <strong>Document Type</strong>
-                        <span>Product Brief</span>
+                        <strong>文档类型</strong>
+                        <span>架构说明</span>
                     </div>
                     <div class="doc-meta-chip">
-                        <strong>Language</strong>
-                        <span>English</span>
+                        <strong>语言</strong>
+                        <span>中文</span>
                     </div>
                     <div class="doc-meta-chip">
-                        <strong>Source File</strong>
-                        <span>marketing-en.md</span>
+                        <strong>源文件</strong>
+                        <span>architecture.md</span>
                     </div>
                 </div>
             </div>
@@ -58,11 +58,11 @@
         <div class="container">
             <div class="doc-layout">
                 <div class="doc-topbar">
-                    <a href="index.html" class="back-link">← Documentation</a>
-                    <a href="marketing-en.md" class="download-link" download>Download .md</a>
+                    <a href="index.html" class="back-link">← 资料中心</a>
+                    <a href="architecture.md" class="download-link" download>下载 .md</a>
                 </div>
                 <div class="doc-article-shell">
-                    <article id="content" class="markdown-body">Loading…</article>
+                    <article id="content" class="markdown-body">加载中…</article>
                 </div>
             </div>
         </div>
@@ -94,13 +94,13 @@
     </footer>
 
     <script>
-        fetch('marketing-en.md')
+        fetch('architecture.md')
             .then(response => response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked.parse(text);
             })
             .catch(() => {
-                document.getElementById('content').textContent = 'Failed to load document.';
+                document.getElementById('content').textContent = '文档加载失败';
             });
     </script>
 </body>

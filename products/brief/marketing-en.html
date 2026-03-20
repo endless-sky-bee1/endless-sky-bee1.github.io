@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Endless system architecture document covering layered design and hardware/software customization interfaces.">
-    <title>System Architecture — Endless</title>
-    <link rel="icon" href="../favicon.ico" sizes="any">
-    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="../styles.css">
+    <meta name="description" content="Endless product overview covering core capabilities and hardware/software customization options.">
+    <title>Product Overview — Endless</title>
+    <link rel="icon" href="../../favicon.ico" sizes="any">
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../../styles.css">
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <link rel="stylesheet" href="doc.css">
 </head>
 <body class="docs-body">
     <nav>
         <div class="container">
-            <a href="../index.html" class="logo">Endless</a>
+            <a href="../../index.html" class="logo">Endless</a>
             <ul>
-                <li><a href="../index.html#features">Features</a></li>
-                <li><a href="../index.html#architecture">Architecture</a></li>
-                <li><a href="../index.html#platforms">Platforms</a></li>
-                <li><a href="../index.html#tech">Tech Stack</a></li>
+                <li><a href="../../index.html#features">Features</a></li>
+                <li><a href="../../index.html#architecture">Architecture</a></li>
+                <li><a href="../../index.html#platforms">Platforms</a></li>
+                <li><a href="../../index.html#tech">Tech Stack</a></li>
                 <li><a href="index.html" class="active">Docs</a></li>
                 <li><a href="https://atomgit.com/endless/endless" target="_blank" rel="noreferrer">AtomGit</a></li>
             </ul>
@@ -29,17 +29,17 @@
     <section class="doc-hero">
         <div class="container">
             <div class="doc-hero-panel">
-                <span class="doc-kicker">Architecture Document</span>
-                <h1>System Architecture</h1>
-                <p>A detailed extension of the homepage architecture section, covering the full stack and the path for hardware/software customization.</p>
+                <span class="doc-kicker">Product Brief</span>
+                <h1>Product Overview</h1>
+                <p>This overview extends the homepage narrative around multimodal AI, low-latency WebRTC preview, intelligent analytics, and hardware customization options.</p>
                 <div class="doc-hero-actions">
                     <a href="index.html" class="btn btn-primary">Back to Docs</a>
-                    <a href="architecture-en.md" class="btn btn-outline" download>Download Markdown</a>
+                    <a href="marketing-en.md" class="btn btn-outline" download>Download Markdown</a>
                 </div>
                 <div class="doc-hero-meta">
                     <div class="doc-meta-chip">
                         <strong>Document Type</strong>
-                        <span>Architecture</span>
+                        <span>Product Brief</span>
                     </div>
                     <div class="doc-meta-chip">
                         <strong>Language</strong>
@@ -47,7 +47,7 @@
                     </div>
                     <div class="doc-meta-chip">
                         <strong>Source File</strong>
-                        <span>architecture-en.md</span>
+                        <span>marketing-en.md</span>
                     </div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
             <div class="doc-layout">
                 <div class="doc-topbar">
                     <a href="index.html" class="back-link">← Documentation</a>
-                    <a href="architecture-en.md" class="download-link" download>Download .md</a>
+                    <a href="marketing-en.md" class="download-link" download>Download .md</a>
                 </div>
                 <div class="doc-article-shell">
                     <article id="content" class="markdown-body">Loading…</article>
@@ -94,7 +94,7 @@
     </footer>
 
     <script>
-        fetch('architecture-en.md')
+        fetch('marketing-en.md')
             .then(response => response.text())
             .then(text => {
                 document.getElementById('content').innerHTML = marked.parse(text);
