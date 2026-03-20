@@ -1,0 +1,68 @@
+/* 顶部品牌栏 */
+.app-name-link {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+/* 侧边栏返回链接 */
+.sidebar-nav > ul > li:first-child a {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* 章节标题间距 */
+.sidebar-nav ul li a {
+    line-height: 1.8;
+}
+
+/* 主色调 */
+:root {
+    --theme-color: #2563eb;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li.active > a {
+    color: var(--theme-color);
+}
+
+/* 代码块 */
+pre[data-lang] {
+    border-radius: 8px;
+}
+
+/* 内容区最大宽度 */
+.content {
+    max-width: 860px;
+}
+
+/* 标题下边线 */
+h2 {
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 0.5rem;
+}
+
+/* 信息提示框 */
+blockquote {
+    border-left: 4px solid var(--theme-color);
+    background: #f0f6ff;
+    border-radius: 0 6px 6px 0;
+    padding: 1rem 1.25rem;
+    color: #333;
+}
+
+/* 返回网站链接 */
+.back-to-site {
+    display: block;
+    padding: 0.6rem 1rem;
+    margin: 1rem 0 1.5rem;
+    background: #f5f5f5;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    color: #555;
+    text-decoration: none;
+}
+
+.back-to-site:hover {
+    background: #e8f0fe;
+    color: var(--theme-color);
+}
