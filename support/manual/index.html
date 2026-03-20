@@ -2,141 +2,94 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta name="description" content="Endless 海思 3516cv610 用户手册">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Endless 用户手册 - 按硬件平台选择对应手册">
     <title>用户手册 - Endless</title>
+    <link rel="icon" href="../../favicon.ico" sizes="any">
     <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@latest/lib/themes/vue.css">
-    <style>
-        :root {
-            --theme-color: #2563eb;
-            --dark-bg: #1a1a1a;
-            --dark-text: #c4c4c4;
-            --dark-sidebar: #141414;
-            --dark-code-bg: #2b2b2b;
-            --dark-border: #333;
-        }
-
-        /* 暗黑模式 */
-        body.dark-mode { background-color: var(--dark-bg); color: var(--dark-text); }
-        body.dark-mode .sidebar { background-color: var(--dark-sidebar); border-right: 1px solid var(--dark-border); }
-        body.dark-mode .sidebar-nav li a { color: #999; }
-        body.dark-mode .sidebar-nav li.active > a { color: var(--theme-color); border-right: 2px solid var(--theme-color); }
-        body.dark-mode pre { background-color: var(--dark-code-bg) !important; }
-        body.dark-mode code { background-color: var(--dark-code-bg) !important; color: #e0e0e0 !important; }
-        body.dark-mode .markdown-section code { color: #f08d49; background-color: rgba(255,255,255,0.1); }
-        body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode h4 { color: #e0e0e0; }
-        body.dark-mode blockquote { color: #999; background: rgba(255,255,255,0.05); border-left-color: var(--theme-color); }
-        body.dark-mode .markdown-section tr:nth-child(2n) { background-color: rgba(255,255,255,0.03); }
-        body.dark-mode .markdown-section td, body.dark-mode .markdown-section th { border-color: var(--dark-border); }
-
-        /* 侧边栏暗黑切换按钮 */
-        .sidebar-toggle-btn {
-            cursor: pointer;
-            display: block;
-            text-align: center;
-            padding: 8px 0;
-            margin: 0 15px 12px 15px;
-            font-size: 13px;
-            border-radius: 4px;
-            background-color: rgba(0,0,0,0.05);
-            color: #505d6b;
-            border: 1px solid rgba(0,0,0,0.08);
-            transition: all 0.3s;
-        }
-        body.dark-mode .sidebar-toggle-btn { background-color: rgba(255,255,255,0.1); color: #ccc; border-color: #444; }
-        .sidebar-toggle-btn:hover { background-color: var(--theme-color); color: white; }
-
-        /* 内容区 */
-        .content { max-width: 860px; }
-
-        h2 {
-            border-bottom: 2px solid #f0f0f0;
-            padding-bottom: 0.5rem;
-        }
-
-        blockquote {
-            border-left: 4px solid var(--theme-color);
-            background: #f0f6ff;
-            border-radius: 0 8px 8px 0;
-            padding: 0.9rem 1.25rem;
-            color: #334;
-        }
-        blockquote p { margin: 0; }
-
-        /* 表格 */
-        .markdown-section th { background: #f0f4ff; color: #1e3a6e; }
-        .markdown-section tr:nth-child(2n) { background: #fafbff; }
-
-        /* 翻页 */
-        .pagination-item a { color: var(--theme-color); }
-    </style>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../pages.css">
 </head>
 <body>
-    <div id="app">加载中...</div>
+    <nav>
+        <div class="container">
+            <a href="../../index.html" class="logo">Endless</a>
+            <ul>
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../../products.html">产品中心</a></li>
+                <li><a href="../../support.html" class="active">服务支持</a></li>
+                <li><a href="../../about.html">关于我们</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="菜单">☰</button>
+        </div>
+    </nav>
 
-    <script>
-        window.$docsify = {
-            name: 'Endless 用户手册',
-            nameLink: '/manual/',
-            repo: '',
-            loadSidebar: true,
-            auto2top: true,
-            subMaxLevel: 3,
-            homepage: 'README.md',
-            search: {
-                placeholder: '搜索文档...',
-                noData: '未找到相关内容',
-                depth: 3
-            },
-            pagination: {
-                previousText: '上一章',
-                nextText: '下一章',
-            },
-            copyCode: {
-                buttonText: '复制',
-                errorText: '失败',
-                successText: '已复制'
-            },
-            plugins: [
-                // 暗黑模式切换按钮注入侧边栏
-                function(hook) {
-                    hook.doneEach(function() {
-                        const sidebar = document.querySelector('.sidebar-nav');
-                        if (!sidebar || document.querySelector('.sidebar-toggle-btn')) return;
+    <section class="page-hero">
+        <div class="container">
+            <span class="hero-note">User Manual</span>
+            <h1>用户手册</h1>
+            <p>请选择对应硬件平台查看使用手册</p>
+        </div>
+    </section>
 
-                        const btn = document.createElement('div');
-                        btn.className = 'sidebar-toggle-btn';
+    <section style="background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>选择平台</h2>
+                <p>不同硬件平台的手册独立维护，内容针对各平台特性编写</p>
+            </div>
+            <div class="platform-grid">
+                <a href="3516cv610/" class="platform-card" style="text-decoration:none;display:block;cursor:pointer;">
+                    <h4>海思 3516cv610</h4>
+                    <p>商用 IP 摄像头平台（PA）</p>
+                    <span class="status supported">已发布</span>
+                </a>
+                <div class="platform-card" style="opacity:0.5;">
+                    <h4>海思 3516cv608</h4>
+                    <p>低成本摄像头平台</p>
+                    <span class="status planned">即将发布</span>
+                </div>
+                <div class="platform-card" style="opacity:0.5;">
+                    <h4>QEMU aarch64</h4>
+                    <p>虚拟开发测试平台（PB）</p>
+                    <span class="status planned">即将发布</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                        const saved = localStorage.getItem('theme-mode');
-                        if (saved === 'dark') {
-                            document.body.classList.add('dark-mode');
-                            btn.textContent = '🌙 切换浅色';
-                        } else {
-                            btn.textContent = '☀️ 切换暗色';
-                        }
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <h3>Endless</h3>
+                <p>开源智能摄像头解决方案</p>
+            </div>
+            <div class="links">
+                <h4>产品</h4>
+                <ul>
+                    <li><a href="../../products.html">产品中心</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>支持</h4>
+                <ul>
+                    <li><a href="../../support.html">服务支持</a></li>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">问题反馈</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>关于</h4>
+                <ul>
+                    <li><a href="../../about.html">关于我们</a></li>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Endless. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
-                        btn.onclick = function() {
-                            document.body.classList.toggle('dark-mode');
-                            const isDark = document.body.classList.contains('dark-mode');
-                            localStorage.setItem('theme-mode', isDark ? 'dark' : 'light');
-                            btn.textContent = isDark ? '🌙 切换浅色' : '☀️ 切换暗色';
-                        };
-
-                        sidebar.insertBefore(btn, sidebar.firstChild);
-                    });
-                }
-            ]
-        }
-    </script>
-
-    <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/docsify.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/search.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify@latest/lib/plugins/zoom-image.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-bash.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-c.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/prismjs@latest/components/prism-json.js"></script>
+    <script src="../../nav.js"></script>
 </body>
 </html>
