@@ -1,13 +1,10 @@
 <!-- _sidebar.md -->
 
-[← 返回官网](/)
-
-**海思 3516cv610 用户手册**
-
-- [手册简介](README.md)
+- [← 返回官网](/)
 
 **入门**
 
+- [手册简介](README.md)
 - [产品概述](zh/01-overview.md)
 - [快速上手](zh/02-quickstart.md)
 - [硬件说明](zh/03-hardware.md)
