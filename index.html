@@ -13,15 +13,16 @@
 <body>
     <nav>
         <div class="container">
-            <a href="#" class="logo">Endless</a>
+            <a href="index.html" class="logo">Endless</a>
             <ul>
-                <li><a href="#features">特性</a></li>
-                <li><a href="#architecture">架构</a></li>
-                <li><a href="#platforms">平台</a></li>
-                <li><a href="#tech">技术栈</a></li>
-                <li><a href="docs/index.html">资料</a></li>
-                <li><a href="https://github.com/endless-sky-bee1" target="_blank">GitHub</a></li>
+                <li><a href="index.html" class="active">首页</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="support.html">服务支持</a></li>
+                <li><a href="about.html">关于我们</a></li>
+
+                <li><a href="https://atomgit.com/endless/endless" target="_blank">AtomGit</a></li>
             </ul>
+            <button class="nav-toggle" aria-label="菜单">☰</button>
         </div>
     </nav>
 
@@ -37,7 +38,7 @@
             </div>
             <div class="cta">
                 <a href="docs/index.html" class="btn btn-primary">查看技术资料</a>
-                <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-outline" target="_blank">查看源码</a>
+                <a href="https://atomgit.com/endless/endless" class="btn btn-outline" target="_blank">查看源码</a>
             </div>
         </div>
     </section>
@@ -249,7 +250,7 @@
             <h2>开始构建你的智能摄像头</h2>
             <p>开源、灵活、强大，Endless 助你快速实现智能摄像头产品化</p>
             <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-                <a href="https://github.com/endless-sky-bee1/endless" class="btn btn-primary" target="_blank">GitHub 仓库</a>
+                <a href="https://atomgit.com/endless/endless" class="btn btn-primary" target="_blank">AtomGit 仓库</a>
                 <a href="docs/index.html" class="btn btn-outline">查看资料</a>
             </div>
         </div>
@@ -262,16 +263,27 @@
                 <p>开源智能摄像头解决方案</p>
             </div>
             <div class="links">
-                <h4>资源</h4>
+                <h4>产品</h4>
                 <ul>
-                    <li><a href="https://github.com/endless-sky-bee1/endless" target="_blank">GitHub 仓库</a></li>
-                    <li><a href="https://github.com/endless-sky-bee1/endless/issues" target="_blank">问题反馈</a></li>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="docs/features.html">功能列表</a></li>
+                    <li><a href="docs/architecture.html">系统架构</a></li>
                 </ul>
             </div>
             <div class="links">
-                <h4>联系方式</h4>
+                <h4>支持</h4>
                 <ul>
-                    <li><a href="mailto:endless@endless-sky.onaliyun.com">endless@endless-sky.onaliyun.com</a></li>
+                    <li><a href="support.html">服务支持</a></li>
+                    <li><a href="docs/index.html">技术资料</a></li>
+                    <li><a href="https://atomgit.com/endless/endless/issues" target="_blank">问题反馈</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>关于</h4>
+                <ul>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="https://atomgit.com/endless/endless" target="_blank">AtomGit 仓库</a></li>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">联系我们</a></li>
                 </ul>
             </div>
             <div class="copyright">
@@ -279,5 +291,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="nav.js"></script>
 </body>
 </html>

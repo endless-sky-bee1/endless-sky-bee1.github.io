@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Endless 产品中心 - 智能摄像头解决方案、硬件平台与功能模块">
+    <title>产品中心 - Endless</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Endless</a>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html" class="active">产品中心</a></li>
+                <li><a href="support.html">服务支持</a></li>
+                <li><a href="about.html">关于我们</a></li>
+
+                <li><a href="https://atomgit.com/endless/endless" target="_blank">AtomGit</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="菜单">☰</button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="hero-note">Product Center</span>
+            <h1>产品中心</h1>
+            <p>开源智能摄像头完整解决方案，覆盖硬件平台、软件功能与 AI 能力</p>
+        </div>
+    </section>
+
+    <!-- 核心产品 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>核心产品</h2>
+                <p>基于主流嵌入式平台的完整摄像头软件栈</p>
+            </div>
+            <div class="product-cards">
+                <div class="product-card featured">
+                    <div class="product-badge">主力产品</div>
+                    <div class="product-icon">📷</div>
+                    <h3>Endless Camera</h3>
+                    <p class="product-desc">基于海思 3516cv610 的完整 IP 摄像头软件方案，覆盖从内核驱动到 Web 前端的全栈实现。</p>
+                    <ul class="product-features">
+                        <li>WebRTC 低延迟预览 &lt;500ms</li>
+                        <li>RTSP / RTMP / HTTP-FLV 推流</li>
+                        <li>AI 多模态对话（通义千问 VL）</li>
+                        <li>人脸 / 人形 / 车辆智能检测</li>
+                        <li>SD 卡录像存储与检索回放</li>
+                        <li>ONVIF / GB28181 协议接入</li>
+                    </ul>
+                    <a href="docs/marketing.html" class="btn btn-primary-dark">查看详细介绍 →</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-icon">🔧</div>
+                    <h3>定制方案</h3>
+                    <p class="product-desc">基于 Endless 框架，可针对客户需求进行软硬件定制开发，快速落地产品化。</p>
+                    <ul class="product-features">
+                        <li>硬件平台移植与适配</li>
+                        <li>私有 AI 算法集成</li>
+                        <li>云平台对接开发</li>
+                        <li>Web 界面定制</li>
+                        <li>私有化部署支持</li>
+                    </ul>
+                    <a href="support.html" class="btn btn-outline-dark">联系咨询 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 硬件平台 -->
+    <section style="background: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>支持的硬件平台</h2>
+                <p>多芯片平台适配，满足不同性能与成本需求</p>
+            </div>
+            <div class="platform-grid">
+                <div class="platform-card">
+                    <h4>海思 3516cv610</h4>
+                    <p>商用 IP 摄像头平台（PA）</p>
+                    <span class="status supported">已支持</span>
+                </div>
+                <div class="platform-card">
+                    <h4>海思 3516cv608</h4>
+                    <p>低成本摄像头平台</p>
+                    <span class="status supported">已支持</span>
+                </div>
+                <div class="platform-card">
+                    <h4>QEMU aarch64</h4>
+                    <p>虚拟开发测试平台（PB）</p>
+                    <span class="status supported">已支持</span>
+                </div>
+                <div class="platform-card">
+                    <h4>海思 3519dv500</h4>
+                    <p>高端智能摄像头平台</p>
+                    <span class="status planned">计划中</span>
+                </div>
+                <div class="platform-card">
+                    <h4>君正 T41</h4>
+                    <p>低功耗摄像头平台</p>
+                    <span class="status planned">计划中</span>
+                </div>
+                <div class="platform-card">
+                    <h4>星宸 SSC338</h4>
+                    <p>高性价比摄像头平台</p>
+                    <span class="status planned">计划中</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能模块 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>功能模块</h2>
+                <p>组件化设计，按需选配</p>
+            </div>
+            <div class="module-grid">
+                <div class="module-item">
+                    <div class="module-icon">📡</div>
+                    <div>
+                        <h4>流媒体服务</h4>
+                        <p>RTSP · RTMP · WebRTC · HTTP-FLV，全协议覆盖</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <div class="module-icon">🤖</div>
+                    <div>
+                        <h4>AI 能力</h4>
+                        <p>大模型对话 · 目标检测 · 图像分析 · 自定义模型</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <div class="module-icon">💾</div>
+                    <div>
+                        <h4>存储管理</h4>
+                        <p>SD 卡录像 · 循环覆盖 · 事件录像 · 回放检索</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <div class="module-icon">🌐</div>
+                    <div>
+                        <h4>Web 管理</h4>
+                        <p>Vue 3 前端 · RESTful API · 实时预览 · 设备配置</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <div class="module-icon">🔒</div>
+                    <div>
+                        <h4>安全认证</h4>
+                        <p>HTTPS · JWT · 用户权限 · 访问控制</p>
+                    </div>
+                </div>
+                <div class="module-item">
+                    <div class="module-icon">🔄</div>
+                    <div>
+                        <h4>设备管理</h4>
+                        <p>OTA 升级 · ONVIF 接入 · GB28181 · 远程运维</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 系统架构 -->
+    <section class="architecture" id="architecture">
+        <div class="container">
+            <div class="section-title">
+                <h2>系统架构</h2>
+                <p>分层设计，从内核到应用的完整解决方案</p>
+            </div>
+            <div class="arch-layers">
+                <div class="arch-layer app">应用层 <span>Web界面 · RESTful API · ONVIF · GB28181</span></div>
+                <div class="arch-layer business">基础业务层 <span>音视频存储 · 设备升级 · AI算法管理</span></div>
+                <div class="arch-layer software">基础软件层 <span>GStreamer · FFmpeg · Live555 · SQLite</span></div>
+                <div class="arch-layer hal">硬件抽象层 <span>音视频编解码 · AI硬件加速 · USB接口</span></div>
+                <div class="arch-layer kernel">内核层 <span>Linux内核 · 设备驱动</span></div>
+                <div class="arch-layer hardware">硬件层 <span>海思3516cv610 · aarch64平台</span></div>
+            </div>
+            <div style="text-align:center;margin-top:2rem;">
+                <a href="docs/architecture.html" class="btn btn-outline">查看详细架构图 →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <h3>Endless</h3>
+                <p>开源智能摄像头解决方案</p>
+            </div>
+            <div class="links">
+                <h4>产品</h4>
+                <ul>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="docs/features.html">功能列表</a></li>
+                    <li><a href="docs/architecture.html">系统架构</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>资源</h4>
+                <ul>
+                    <li><a href="https://atomgit.com/endless/endless" target="_blank">AtomGit 仓库</a></li>
+                    <li><a href="docs/index.html">技术资料</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">endless@endless-sky.onaliyun.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Endless. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="关于 Endless - 开源智能摄像头项目的背景、愿景与团队">
+    <title>关于我们 - Endless</title>
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">Endless</a>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="products.html">产品中心</a></li>
+                <li><a href="support.html">服务支持</a></li>
+                <li><a href="about.html" class="active">关于我们</a></li>
+
+                <li><a href="https://atomgit.com/endless/endless" target="_blank">AtomGit</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="菜单">☰</button>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="hero-note">About Us</span>
+            <h1>关于我们</h1>
+            <p>用开源推动智能摄像头技术的普及与创新</p>
+        </div>
+    </section>
+
+    <!-- 项目简介 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="about-intro">
+                <div class="about-text">
+                    <h2>项目背景</h2>
+                    <p>智能摄像头行业长期面临技术壁垒高、方案碎片化、开发成本大等问题。嵌入式开发者往往需要从零开始构建从内核驱动到云端 AI 的全栈能力，耗时费力。</p>
+                    <p style="margin-top:1rem;">Endless 应运而生——一个完全开源的智能摄像头技术方案，目标是提供一套清晰分层、接口完整、支持软硬件定制的参考实现，帮助开发者和企业快速完成产品化。</p>
+                    <p style="margin-top:1rem;">从海思芯片平台的底层驱动，到 WebRTC 实时预览，再到阿里云大模型 AI 对话，Endless 整合了摄像头产品所需的核心技术栈，并以开源方式持续迭代。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-num">3+</div>
+                        <div class="stat-label">支持硬件平台</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">5+</div>
+                        <div class="stat-label">流媒体协议</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">&lt;500ms</div>
+                        <div class="stat-label">WebRTC 延迟</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">全栈</div>
+                        <div class="stat-label">开源实现</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 愿景与价值观 -->
+    <section style="background: var(--light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>愿景与价值观</h2>
+                <p>驱动我们持续前行的核心理念</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🌐</div>
+                    <h3>开放共享</h3>
+                    <p>坚持开源，让智能摄像头技术对每一位开发者透明可及，降低行业门槛。</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🏗️</div>
+                    <h3>架构清晰</h3>
+                    <p>分层设计，接口规范，让复杂系统变得可理解、可维护、可扩展。</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🚀</div>
+                    <h3>快速落地</h3>
+                    <p>提供完整方案资料与参考实现，帮助团队缩短从评估到产品化的周期。</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>持续迭代</h3>
+                    <p>与社区共同成长，持续吸收新硬件、新协议与新 AI 能力，保持技术前沿。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术栈 -->
+    <section style="background: white;">
+        <div class="container">
+            <div class="section-title">
+                <h2>技术栈</h2>
+                <p>成熟稳定的技术选型，保障系统可靠性</p>
+            </div>
+            <div class="tech-categories">
+                <div class="tech-category">
+                    <h4>后端技术</h4>
+                    <ul>
+                        <li>C/C++17</li>
+                        <li>CMake 构建系统</li>
+                        <li>GStreamer 媒体框架</li>
+                        <li>FFmpeg 音视频处理</li>
+                        <li>SQLite / OpenSSL</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h4>前端技术</h4>
+                    <ul>
+                        <li>Vue 3</li>
+                        <li>Ant Design Vue</li>
+                        <li>Vite 5</li>
+                        <li>WebRTC</li>
+                        <li>WebSocket</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h4>AI 服务</h4>
+                    <ul>
+                        <li>阿里云通义千问 VL</li>
+                        <li>阿里云百炼平台</li>
+                        <li>YOLOv8 目标检测</li>
+                        <li>小智 AI 语音服务</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h4>通信协议</h4>
+                    <ul>
+                        <li>RTSP / RTMP</li>
+                        <li>WebRTC</li>
+                        <li>HTTP / HTTPS</li>
+                        <li>ONVIF</li>
+                        <li>GB28181</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系 -->
+    <section class="cta">
+        <div class="container">
+            <h2>参与 Endless</h2>
+            <p>欢迎贡献代码、提交 Issue、分享使用经验，或与我们探讨合作机会</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+                <a href="https://atomgit.com/endless/endless" class="btn btn-primary" target="_blank">AtomGit 仓库</a>
+                <a href="mailto:endless@endless-sky.onaliyun.com" class="btn btn-outline">联系我们</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="brand">
+                <h3>Endless</h3>
+                <p>开源智能摄像头解决方案</p>
+            </div>
+            <div class="links">
+                <h4>产品</h4>
+                <ul>
+                    <li><a href="products.html">产品中心</a></li>
+                    <li><a href="docs/features.html">功能列表</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>支持</h4>
+                <ul>
+                    <li><a href="support.html">服务支持</a></li>
+                    <li><a href="docs/index.html">技术资料</a></li>
+                </ul>
+            </div>
+            <div class="links">
+                <h4>联系方式</h4>
+                <ul>
+                    <li><a href="mailto:endless@endless-sky.onaliyun.com">endless@endless-sky.onaliyun.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Endless. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+</body>
+</html>
