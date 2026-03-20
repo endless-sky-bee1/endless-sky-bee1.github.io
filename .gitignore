@@ -80,3 +80,10 @@ tmp/G610Q-IPC-38E快速体验手册_V1.4_images/G610Q-IPC-38E快速体验手册_
 tmp/G610Q-IPC-38E快速体验手册_V1.4_images/G610Q-IPC-38E快速体验手册_V1.4.pdf-0051-01.png
 tmp/G610Q-IPC-38E快速体验手册_V1.4_images/G610Q-IPC-38E快速体验手册_V1.4.pdf-0052-01.png
 tmp/G610Q-IPC-38E快速体验手册_V1.4_images/G610Q-IPC-38E快速体验手册_V1.4.pdf-0052-03.png
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+.env*
+!.env.example
